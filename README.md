@@ -1,30 +1,54 @@
-# Kleurr
+<h1 align="center">
+  Kleurr
+</h1>
 
-*Kleurr* (Dutch for "color") is a lightweight console logging prettifier for Node.js, designed with simplicity and readability in mind. Make your logs pop with colors and custom types!
----
+<h4 align="center" id="about">
+ A lightweight console logging prettifier for Node.js, designed with simplicity and readability in mind.</h4>
 
-## Features
+<div align="center">
+  <img alt="Header" src="screenshots/header.png" width="88%">
+</div>
 
-- Predefined log types: `log`, `warn`, `note`, `error`
-- Customizable log types with `registerType`
-- Works out-of-the-box in Node.js
-- Lightweight and dependency-free
+<p align="center">
+  <a href="https://www.npmjs.com/package/@averagecryptonerd/kleurr">
+  </a>
+</p>
 
----
 
-## Installation
+## Contents
+
+- [About](#about)
+- [Install](#install)
+- [Usage](#usage)
+
+## Install
+
+### Through NPM:
 
 ```bash
 npm install @averagecryptonerd/kleurr
 ```
 
-Then require it in your project:
-```javascript
-const kleurr = require("@averagecryptonerd/kleurr");
-```
----
-
 ## Usage
+
+### Default Loggers
+
+Import Kleurr and start using any of the default loggers.
+
+<details>
+<summary>Available loggers:</summary>
+
+<br/>
+
+- `log`
+- `warn`
+- `note`
+- `error`
+- `success`
+
+</details>
+
+<br/>
 
 ### Basic Logging
 ```javascript
@@ -36,15 +60,9 @@ kleurr.note("Here's a helpful note.");
 kleurr.error("Something went wrong!");
 ```
 
-### Custom Log Types
+### Custom Logging
 ```javascript
 kleurr.registerType("success", "\x1b[42m", "\x1b[30m"); // green background, black text
 kleurr.success("Operation completed successfully!");
 ```
 > You can create as many custom types as you like by specifying the background and text colors using ANSI escape codes.
-
----
-
-## Contributing
-
-Contributions, suggestions, and bug reports are welcome! Feel free to open an issue or submit a pull request.
