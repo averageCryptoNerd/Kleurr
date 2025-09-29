@@ -45,6 +45,10 @@ Import Kleurr and start using any of the default loggers.
 - `note`
 - `error`
 - `success`
+- `loading`
+- `important`
+- `fatal`
+- `debug`
 
 </details>
 
@@ -54,15 +58,21 @@ Import Kleurr and start using any of the default loggers.
 ```javascript
 const kleurr = require("@averagecryptonerd/kleurr");
 
-kleurr.log("This is a regular log message.");
+kleurr.log("This is a standard log message.");
+kleurr.info?.("This is an informational message.");
 kleurr.warn("This is a warning!");
 kleurr.note("Here's a helpful note.");
 kleurr.error("Something went wrong!");
+kleurr.success("Operation completed successfully!");
+kleurr.fatal("This is a fatal error!");
+kleurr.debug("Debugging: variable x = 42");
+kleurr.important("This is important!");
+kleurr.loading("Processing data…");
 ```
 
 ### Custom Logging
 ```javascript
-kleurr.registerType("success", "\x1b[42m", "\x1b[30m"); // green background, black text
-kleurr.success("Operation completed successfully!");
+kleurr.registerType("custom", "\x1b[35m", "★ "); // Purple star
+kleurr.custom("This is a custom log type!");
 ```
 > You can create as many custom types as you like by specifying the background and text colors using ANSI escape codes.
