@@ -1,6 +1,6 @@
 # Kleurr
 
-*Kleurr* (German for "color") is a lightweight console logging prettifier for Node.js, designed with simplicity and readability in mind. Make your logs pop with colors and custom types!
+*Kleurr* (Dutch for "color") is a lightweight console logging prettifier for Node.js, designed with simplicity and readability in mind. Make your logs pop with colors and custom types!
 ---
 
 ## Features
