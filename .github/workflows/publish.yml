@@ -23,8 +23,6 @@ jobs:
 
       - name: Bump version
         run: |
-          git config --global user.name "AverageCryptoNerd"
-          git config --global user.email "averagecryptonerd@gmail.com"
           npm version patch -m "ci: bump version to %s [skip ci]"
 
       - name: Publish to NPM
