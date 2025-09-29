@@ -11,9 +11,9 @@ const colors = {
 };
 
 const symbols = {
-  log: " ",     
+  log: " ",     
   warn: " ",     
-  note: " ",     
+  note: " ",     
   error: " ",    
   success: " ",  
 };
@@ -30,8 +30,9 @@ function timestamp() {
 function format(type, message) {
   const timeStr = `${colors.timestamp}${timestamp()}${reset}`;
   const typeStr = `${colors[type] || colors.log}${bold}${symbols[type] || ''} ${type.toUpperCase()}${reset}`;
-  return `${timeStr} ${typeStr} ${message}`;
+    return `${colors.timestamp}[${timeStr}${colors.timestamp}]${reset} ${typeStr} ${message}`;
 }
+
 
 const kleurr = {};
 
