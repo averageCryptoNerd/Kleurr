@@ -1,4 +1,4 @@
-name: Publish on Commit
+name: Publish to NPM upon commit
 
 on:
   push:
