@@ -1,6 +1,6 @@
 {
   "name": "@averagecryptonerd/kleurr",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Kleurr (German for \"color\") is a lightweight console logging prettifier for Node.js, designed with simplicity and readability in mind. Make your logs pop with colors and custom types!",
   "main": "src/index.js",
   "keywords": [
